@@ -1,0 +1,24 @@
+#!/usr/bin/with-contenv bash
+
+# create our folders
+mkdir -p \
+	/config/{locales,logs,packs}
+
+
+# create symlinks for config
+symlinks=( \
+/opt/locales \
+/opt/logs \ 
+/opt/packs \
+)
+
+for i in "${symlinks[@]}"
+do
+[[ -L "$i" && ! "$i" -ef /config/"$(basename "$i")"  ]] && unlink "$i"
+[[ ! -L "$i" ]] && ln -s /config/"$(basename "$i")" "$i"
+done
+
+# permissions
+chown -R abc:abc \
+	/config \
+	/opt
