@@ -4,6 +4,7 @@ FROM lsiobase/ubuntu:bionic
 ARG BUILD_TYPE=lastSuccessfulBuild
 ARG DEBIAN_FRONTEND="noninteractive"
 LABEL maintainer="anthr76"
+LABEL org.opencontainers.image.source https://github.com/anthr76/geyser-docker
 
 RUN \
  echo "**** install packages ****" && \
