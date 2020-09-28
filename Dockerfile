@@ -25,4 +25,4 @@ COPY root/ /
 WORKDIR /opt
 
 VOLUME /config
-EXPOSE 19132
+EXPOSE 19132/udp
