@@ -17,3 +17,4 @@ This container is built with Linuxserver.io's [lsiobase](https://fleet.linuxserv
 - ~~Test new s6-overlay images and explore feasibility of running true rootless with podman~~
 - Add health checks
 - Add environment variables
+- Proper pipeline at some point?
