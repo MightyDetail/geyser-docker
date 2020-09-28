@@ -1,5 +1,7 @@
 # geyser-docker
 
+[GeyserMC](https://github.com/GeyserMC/Geyser/) Minecraft bedrock <> java proxy translator in a docker container.
+
 `docker pull ghcr.io/anthr76/geyser-docker:latest`
 
 ### Usage
