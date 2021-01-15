@@ -2,7 +2,7 @@ version: "3.7"
 services:
   geysermc:
     container_name: minecraft-geysermc
-    image: ghcr.io/anthr76/geyser-docker:latest
+    image: mightydetail/geysermc:latest
     restart: unless-stopped
     ports:
       - 19132:19132/udp
